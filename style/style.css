@@ -1,0 +1,86 @@
+:root {
+  --purple-600: #9333ea;
+  --purple-500: #a855f7;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.main-heading {
+  margin: 90px auto 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700px;
+  letter-spacing: 4px;
+  line-height: 40px;
+}
+.line {
+  display: block;
+  height: 4px;
+  width: 80px;
+  margin: auto;
+  background-color: var(--purple-600);
+}
+.btn-wrapper {
+  margin: 36px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btns {
+    color: var(--purple-500);
+    padding: 8px 14px;
+    background-color: #fff;
+    border: 1px solid var(--purple-600);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 150ms ease-in 60ms;
+    -webkit-transition: all 150ms ease-in 60ms;
+    -moz-transition: all 150ms ease-in 60ms;
+    -ms-transition: all 150ms ease-in 60ms;
+    -o-transition: all 150ms ease-in 60ms;
+}
+.btns:hover {
+  background-color: var(--purple-600);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.btns-active {
+  background-color: var(--purple-600);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 150ms ease-in 60ms;
+  -webkit-transition: all 150ms ease-in 60ms;
+  -moz-transition: all 150ms ease-in 60ms;
+  -ms-transition: all 150ms ease-in 60ms;
+  -o-transition: all 150ms ease-in 60ms;
+}
+
+.product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  width: 85%;
+  margin: 50px auto;
+}
+.product-image {
+  width: 225px;
+  height: 150px;
+  object-fit: fill;
+}
